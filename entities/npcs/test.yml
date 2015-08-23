@@ -1,15 +1,15 @@
-- &guard
+- &Security
   vnum: 1
   room: 2
   script: '1.js'
   keywords:
-    en: ['guard', 'guardsman']
+    en: ['guard', 'guardsman', 'police', 'security', 'security officer', 'officer']
     es: ['guardia', 'defensor']
   short_description:
-    en: 'A cityguard keeps watch, standing stoically'
+    en: 'Security officer'
     es: 'Un guardia vigila, de pie estoicamente'
   description:
-    en: 'Dressed in militia regalia, the weathered guard eyes you carefully.'
+    en: 'Dressed in police regalia, the weathered officer eyes you carefully.'
     es: 'ES-Dressed in militia regalia, the weathered guard eyes you carefully.'
   behaviors: "rtcombat"
   attributes:
@@ -19,10 +19,10 @@
     damage: 7-16
     level: 4
     experience: 1000
-  load_max: 7
-- *guard
-- *guard
-- <<: *guard
-  room: 1
-- <<: *guard
-  room: 1
+  load_max: 2
+- *Security
+- *Security
+- <<: *Security
+  room: 3
+- <<: *Security
+  room: 2

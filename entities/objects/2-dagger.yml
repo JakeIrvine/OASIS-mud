@@ -9,10 +9,9 @@
     description:
         en: "A very point dagger. Edges are a bit dull though."
         es: "ES-A very point dagger. Edges are a bit dull though."
-    room: 1
+    room: 2
     behaviors: "wieldable"
     attributes:
         speed: 1
         damage: 5-12
     load_max: 3
-

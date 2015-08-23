@@ -33,7 +33,7 @@ exports.Skills = {
 					player.say(L(player.getLocale(), 'warrior', 'TACKLE_COOLDOWN'));
 					return true;
 				}
-				
+
 				var target = player.isInCombat();
 				if (!target) {
 					player.say("Somehow you're in combat with a ghost");
@@ -85,5 +85,64 @@ exports.Skills = {
 				}));
 			}
 		}
+	},
+	mage: {
+		fireball: {
+			type: 'active',
+			level: 2,
+			name: "fireball",
+			description: "shoot a deadly fireball at your opponent for 400% weapon damage. Target's attacks are slower for 5 seconds following the attack.",
+			cooldown: 4,
+			activate: function (player, args, rooms, npcs)
+			{
+				if (!player.isInCombat()) {
+					player.say(L(player.getLocale(), 'mage', 'FIREBALL_NOCOMBAT'));
+					return true;
+				}
+
+				if (player.getAffects('cooldown_tackle')) {
+					player.say(L(player.getLocale(), 'mage', 'FIREBALL_COOLDOWN'));
+					return true;
+				}
+
+				var target = player.isInCombat();
+				if (!target) {
+					player.say("Somehow you're in combat with a ghost");
+					return true;
+				}
+
+				var damage = Math.min(target.getAttribute('max_health'), Math.ceil(player.getDamage().max * 1.2));
+
+				player.say(L(player.getLocale(), 'mage', 'FIREBALL_DAMAGE', damage));
+				target.setAttribute('health', target.getAttribute('health') - damage);
+
+				if (!target.getAffects('slow')) {
+					target.addAffect('slow', Affects.slow({
+						duration: 3,
+						magnitude: 1.5,
+						player: player,
+						target: target,
+						deactivate: function () {
+							player.say(L(player.getLocale(), 'mage', 'FIREBALL_RECOVER'));
+						}
+					}));
+				}
+
+				// Slap a cooldown on the player
+				player.addAffect('cooldown_tackle', {
+					duration: 4,
+					deactivate: function () {
+						player.say(L(player.getLocale(), 'mage', 'FIREBALL_COOLDOWN_END'));
+					}
+				});
+
+				return true;
+			}
+		},
+
+
 	}
+
+
+
 };

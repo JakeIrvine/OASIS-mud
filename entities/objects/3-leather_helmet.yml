@@ -9,7 +9,7 @@
     description:
         en: "A roughly worn leather helmet."
         es: "Leather. Hat."
-    room: 1
+    room: 2
     script: "3-leather_helmet.js"
     behaviors: "wearable"
     attributes:

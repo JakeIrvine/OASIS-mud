@@ -1,0 +1,49 @@
+-
+  title:
+    en: 'Ludus outside'
+    es: 'Ludus outside'
+  description:
+    en: 'You are outside school 20715, to west you can see a forest to the north you can see some teleporters'
+    es: 'You are in a busy school corridor'
+  exits:
+    -
+      location: 10
+      direction: 'west'
+    -
+      location: 11
+      direction: 'north'
+    -
+      location: 4
+      direction: 'school-20715'
+
+
+  location: 9
+  area: 'Ludus'
+-
+  title:
+    en: 'forest'
+    es: 'forest'
+  location: 10
+  description:
+    en: 'You find your self in a forest.'
+    es: 'You find your self in a forest.'
+  exits:
+    -
+      location: 9
+      direction: 'east'
+-
+  title:
+    en: 'Teleporters'
+    es: 'Teleporters'
+  location: 11
+
+  description:
+    en: 'you see 3 silver teleporters.'
+    es: 'you see 3 silver teleporters.'
+  exits:
+    -
+      location: 9
+      direction: 'south'
+    -
+      location: 1
+      direction: 'incipio'

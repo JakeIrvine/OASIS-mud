@@ -1,0 +1,47 @@
+-
+  title:
+    en: 'Incipio'
+    es: 'Incipio'
+  description:
+    en: 'you see an open grassy space with shopping malls and  Teleporters '
+    es: ''
+  exits:
+    -
+      location: 2
+      direction: 'Shopping-mall'
+    -
+      location: 3
+      direction: 'teleporters'
+
+  location: 1
+  area: 'Incipio'
+-
+  title:
+    en: 'Shopping mall'
+    es: 'Shopping mall'
+  location: 2
+  description:
+    en: 'A busy shopping mall with everything you could ever need.'
+    es: 'A busy hustling shopping mall with everything you could ever need.'
+  exits:
+    -
+      location: 1
+      direction: 'center'
+-
+  title:
+    en: 'Teleporters'
+    es: 'Teleporters'
+  location: 3
+
+
+  description:
+    en: 'A vast long row of silver teleporters.'
+    es: 'A vast long row of silver teleporters.'
+  exits:
+    -
+      location: 1
+      direction: 'center'
+
+    -
+      location: 4
+      direction: 'ludus'

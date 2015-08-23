@@ -139,6 +139,7 @@ var Item = function (config)
 	var self = this;
 
 	self.keywords;
+    self.value;
 	self.short_description
 	self.description;
 	self.inventory;     // Player or Npc object that is holding it

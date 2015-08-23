@@ -1,0 +1,21 @@
+FIREBALL:
+    en: "fireball"
+    es: "fireball"
+FIREBALL_DESC:
+    en: "shoot a fireball at your opponent for 200% weapon damage"
+    es: "shoot a fireball at your opponent for 200% weapon damage"
+FIREBALL_NOCOMBAT:
+    en: "You're not in combat."
+    es: "ES-You're not in combat."
+FIREBALL_DAMAGE:
+    en: "You hit your opponent with a fireball for $[1] damage and they stagger heavily."
+    es: "You hit your opponent with a fireball for $[1] damage and they stagger heavily."
+FIREBALL_RECOVER:
+    en: "Your opponent gathers their composure."
+    es: "ES-Your opponent gathers their composure."
+FIREBALL_COOLDOWN:
+    en: "You can't use that skill yet."
+    es: "ES-You can't use that skill yet."
+FIREBALL_COOLDOWN_END:
+    en: "You can use fireball again."
+    es: "ES-You can use tackle again."

@@ -1,0 +1,44 @@
+-
+  title:
+    en: 'Ludus school 20715'
+    es: 'Ludus school 20715'
+  description:
+    en: 'You are in a busy school corridor'
+    es: 'You are in a busy school corridor'
+  exits:
+    -
+      location: 5
+      direction: 'World-History'
+    -
+      location: 6
+      direction: 'Computer-science'
+    -
+      location: 9
+      direction: 'outside'
+  location: 4
+  area: 'Ludus'
+-
+  title:
+    en: 'World history class room'
+    es: 'World history class room'
+  location: 5
+  description:
+    en: 'You find your self in the world history class room.'
+    es: 'You find your self in the world history class room.'
+  exits:
+    -
+      location: 4
+      direction: 'corridor'
+-
+  title:
+    en: 'Computer science class room'
+    es: 'Computer science class room'
+  location: 6
+
+  description:
+    en: 'You see a room with psuedo code on the wall.'
+    es: 'You see a room with psuedo code on the wall.'
+  exits:
+    -
+      location: 4
+      direction: 'corridor'

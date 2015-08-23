@@ -152,6 +152,7 @@ var Npc = function (config)
 	self.description;
 	self.room; // Room that it's in (vnum)
 	self.vnum; // Not to be confused with its vnum
+    self.drops;
 	self.in_combat = false;
 	self.uuid = null;
 
@@ -189,6 +190,7 @@ var Npc = function (config)
 	 * Mutators
 	 */
 	self.getVnum      = function () { return self.vnum; };
+    self.getDrops      = function () { return self.drops; };
 	self.getInv       = function () { return self.inventory; };
 	self.isInCombat   = function () { return self.in_combat; };
 	self.getRoom      = function () { return self.room; };

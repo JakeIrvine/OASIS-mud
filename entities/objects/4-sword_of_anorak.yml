@@ -1,0 +1,19 @@
+- &Sword_of_anorak
+    vnum: 4
+    short_description:
+        en: "Sword of Anorak"
+        es: "Sword of Anorak"
+    keywords:
+        en: [ "Sword of Anorak", "god sword", "anorak" ]
+        es: [ "Sword of Anorak", "god sword", "anorak" ]
+    description:
+        en: "A dark sword crackeling with purple energy."
+        es: "A dark sword crackeling with purple energy."
+    room: 0000
+    script: "1-sword.js"
+    behaviors: "wieldable"
+    attributes:
+        speed: 1.5
+        damage: 80-90
+    load_max: 0
+- *Sword_of_anorak

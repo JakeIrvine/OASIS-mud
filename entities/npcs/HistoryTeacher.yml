@@ -1,0 +1,27 @@
+- &teacher
+  vnum: 8
+  room: 5
+
+
+  keywords:
+    en: ['teacher', 'pedagog', 'professor', 'docter', 'Teacher']
+    es: ['teacher', 'pedagog', 'professor', 'docter', 'Teacher']
+  short_description:
+    en: 'Teacher'
+    es: 'Teacher'
+  description:
+    en: 'Dressed in a regal suit, with a look of superiority about him.'
+    es: 'Dressed in a regal suit, with a look of superiority about him.'
+
+  attributes:
+    max_health: 80
+    health: 80
+    level: 1
+    experience: 1000000
+  load_max: 1
+- *teacher
+- *teacher
+- <<: *teacher
+  room: 5
+- <<: *teacher
+  room: 6

@@ -1,5 +1,5 @@
 WELCOME:
-    en: "<yellow>Welcome back, $[1]</yellow>"
+    en: "<yellow>\nIdentity verification successful. \nWelcome back to OASIS, $[1]!. \nLogin Completed: 07:53:21 OST–2.10.2045. </yellow>"
     es: "ES-Welcome back, $[1]"
 NAME_PROMPT:
     en: "What is your character's name: "
