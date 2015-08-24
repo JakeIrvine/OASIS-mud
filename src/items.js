@@ -262,7 +262,7 @@ var Item = function (config)
 			script: self.script,
 			equipped: self.equipped,
 			attributes: self.attributes,
-            value: self.value
+            value: self.ivalue
 		};
 	};
 

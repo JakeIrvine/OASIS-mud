@@ -8,18 +8,18 @@ exports.command = function (rooms, items, players, npcs, Commands)
     {
         var room = rooms.getAt(player.getLocation());
         if (args) {
-            // Look at items in the room first
-            var thing = CommandUtil.findItemInRoom(items, args, room, player, true);
+            // Look at items in inventory first
+            thing = CommandUtil.findItemInInventory(args, player, true);
 
-            if (!thing) {
+    /*        if (!thing) {
                 // Then the inventory
                 thing = CommandUtil.findItemInInventory(args, player, true);
-            }
+            }*/
 
-            if (!thing) {
+/*            if (!thing) {
                 // then for an NPC
                 thing = CommandUtil.findNpcInRoom(npcs, args, room, player, true);
-            }
+            }*/
 
             //TODO: look at players
 
