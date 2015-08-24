@@ -10,6 +10,7 @@
         en: "A very point dagger. Edges are a bit dull though."
         es: "ES-A very point dagger. Edges are a bit dull though."
     room: 2
+    value: 20
     behaviors: "wieldable"
     attributes:
         speed: 1

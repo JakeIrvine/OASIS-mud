@@ -11,6 +11,7 @@
         es: "A shiny pice of metal about 2 centermeters long.."
     room: 3
     room: 4
+    value: 1
 
 
 - *OASIS_credit

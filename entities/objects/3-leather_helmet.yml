@@ -10,6 +10,7 @@
         en: "A roughly worn leather helmet."
         es: "Leather. Hat."
     room: 2
+    value: 20
     script: "3-leather_helmet.js"
     behaviors: "wearable"
     attributes:
