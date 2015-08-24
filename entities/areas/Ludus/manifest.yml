@@ -1,3 +1,5 @@
 Ludus:
   title: 'Ludus'
+  sector: 1
+  zone: 16
   suggested_range: '1-99'
