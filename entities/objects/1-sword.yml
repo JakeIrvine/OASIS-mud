@@ -10,7 +10,7 @@
         en: "A fairly plain, although sharp, steel longsword."
         es: "Curved. Sword."
     room: 2
-    ivalue: 20
+    ivalue: '20'
     script: "1-sword.js"
     behaviors: "wieldable"
     attributes:

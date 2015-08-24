@@ -166,7 +166,7 @@ var Item = function (config)
 		self.vnum              = config.vnum;
 		self.script            = config.script;
 		self.attributes        = config.attributes;
-        self.ivalue             = config.value;
+        self.ivalue             = config.ivalue;
 
 		Data.loadListeners(config, l10n_dir, objects_scripts_dir, Data.loadBehaviors(config, 'objects/', self));
 	};
@@ -189,7 +189,7 @@ var Item = function (config)
 	self.setContainer = function (uid)        { self.container = uid; };
 	self.setEquipped  = function (equip)      { self.equipped = !!equip; };
 	self.setAttribute = function (attr, val)  { self.attributes[attr] = val; };
-    self.getIvalue = function() {self.value = 1;}
+    self.getIvalue = function() {self.ivalue = 1;}
 	/**#@-*/
 
 	/**
@@ -203,17 +203,12 @@ var Item = function (config)
 			self.description :
 			(locale in self.description ? self.description[locale] : 'UNTRANSLATED - Contact an admin');
 	};
-    self.getDescription = function (locale)
-    {
-        return typeof self.value === 'string' ?
-            self.description :
-            (locale in self.description ? self.description : 'UNTRANSLATED - Contact an admin');
-    };
+
     self.getIvalue = function (locale)
     {
         return typeof self.ivalue === 'string' ?
-            self.value :
-            (locale in self.ivalue ? self.ivalue : 'UNTRANSLATED - Contact an admin');
+            self.ivalue :
+            (locale in self.ivalue ? self.ivalue[locale] : 'UNTRANSLATED - Contact an admin');
     };
 
 	/**

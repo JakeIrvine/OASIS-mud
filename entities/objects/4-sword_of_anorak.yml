@@ -11,7 +11,7 @@
         es: "A dark sword crackeling with purple energy."
     room: 0000
     script: "1-sword.js"
-    ivalue: 50000
+    ivalue: '50000'
     behaviors: "wieldable"
     attributes:
         speed: 1.5

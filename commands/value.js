@@ -21,14 +21,14 @@ exports.command = function (rooms, items, players, npcs, Commands)
                 thing = CommandUtil.findNpcInRoom(npcs, args, room, player, true);
             }
 
-            // TODO: look at players
+            //TODO: look at players
 
             if (!thing) {
                 player.sayL10n(l10n, 'ITEM_NOT_FOUND');
                 return;
             }
 
-            player.say(thing.value(player.getLocale()));
+            player.say(thing.getIvalue(player.getLocale()));
             return;
         }
 
