@@ -166,6 +166,7 @@ var Item = function (config)
 		self.vnum              = config.vnum;
 		self.script            = config.script;
 		self.attributes        = config.attributes;
+        self.value             = config.value;
 
 		Data.loadListeners(config, l10n_dir, objects_scripts_dir, Data.loadBehaviors(config, 'objects/', self));
 	};
@@ -188,6 +189,7 @@ var Item = function (config)
 	self.setContainer = function (uid)        { self.container = uid; };
 	self.setEquipped  = function (equip)      { self.equipped = !!equip; };
 	self.setAttribute = function (attr, val)  { self.attributes[attr] = val; };
+    self.getValue = function() {self.value = null;}
 	/**#@-*/
 
 	/**
@@ -252,7 +254,8 @@ var Item = function (config)
 			vnum: self.vnum,
 			script: self.script,
 			equipped: self.equipped,
-			attributes: self.attributes
+			attributes: self.attributes,
+            value: self.value
 		};
 	};
 
